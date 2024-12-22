@@ -1,0 +1,14 @@
+#reportSection {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 55%;
+    width: 60%;
+    height: 80%;
+    background-color: #f9f9f9;
+    z-index: 1000;
+    overflow: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,69 @@
+main {
+    display: flex;
+    width: 100%;
+  height: max-content;
+    
+
+}
+
+
+.leftContainer {
+   
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    
+    
+
+
+}
+
+.rightContainer {
+ 
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    height: 100%;
+    background-color: #f0f8ff;
+   
+
+
+}
+
+.navigation {
+    width: 100%;
+    height: 10%;
+}
+
+.nav-icon {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1050;
+    color: #00D1D1;
+}
+@media (max-width: 768px) {
+   
+   
+  
+    .nav-icon {
+        display: block;
+    }
+   
+
+}
+.rightContainer {
+ 
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+    background-color: white;
+   
+
+
+}

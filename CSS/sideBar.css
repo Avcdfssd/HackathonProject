@@ -1,0 +1,57 @@
+/* General styles for the sidebar */
+.vertical-nav {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    width: 250px;
+    height: 100vh;
+}
+
+.vertical-nav .nav-link {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer; /* Ensure the cursor changes to a pointer */
+}
+
+.vertical-nav .nav-link:hover,
+.vertical-nav .nav-link.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Additional styles for the nav items */
+.nav-item {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .vertical-nav {
+        transform: translateY(-100%);
+        display: none;
+        width: 100%;
+        height: auto;
+        position: absolute;
+       
+    }
+
+   
+  
+  
+    .main-content {
+        margin-left: 0;
+        padding-top: 4rem;
+    }
+    .top-profile-section {
+        display: none;
+    }
+    .vertical-nav.show {
+        transform: translateY(0);
+        
+    }
+}
+
+

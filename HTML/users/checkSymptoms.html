@@ -1,0 +1,29 @@
+<header class="text-center my-4">
+    <h1>Rare Disease Symptoms Checker</h1>
+</header>
+<main class="container">
+    <div id="symptomsForm" class="mb-4">
+        <div class="form-group">
+            <label for="patientName" class="patientName">Patient Name:</label>
+            <input type="text" id="patientName" name="patientName" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="patientAge">Patient Age:</label>
+            <input type="number" id="patientAge" name="patientAge" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="symptom1">Symptom 1:</label>
+            <input type="text" id="symptom1" name="symptom1" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="symptom2">Symptom 2:</label>
+            <input type="text" id="symptom2" name="symptom2" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="symptom3">Symptom 3:</label>
+            <input type="text" id="symptom3" name="symptom3" class="form-control">
+        </div>
+        <button onclick="symptomsUpload()" class="btn btn-primary">Send Report</button>
+    </div>
+    <div id="results"></div>
+</main>

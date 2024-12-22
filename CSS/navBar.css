@@ -1,0 +1,37 @@
+
+
+.top-profile-section {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1050;
+    background-color:  #f0f8ff;
+    
+}
+.top-profile-section img {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.top-profile-section span {
+    color: #f0f8ff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.top-profile-section span {
+    color: #f0f8ff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.top-profile-section span button:hover {
+    text-decoration: underline;
+}
+
+#usernameDisplay {
+   display: none;
+}
