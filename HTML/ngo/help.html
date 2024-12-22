@@ -1,0 +1,44 @@
+<div class="content">
+    <div id="initialOptions" class="hidden">
+        <h2>NGO's Help</h2>
+        <button id="submitReportBtn">Submit Report</button>
+        <button id="checkStatusBtn">Check Report Status</button>
+    </div>
+
+    <div id="formContainer" class="hidden">
+        <h2>Submit Report</h2>
+        <form id="reportForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" name="contact" placeholder="Enter your contact info" required>
+
+            <label for="diseaseDetails">Disease Details:</label>
+            <textarea id="diseaseDetails" name="diseaseDetails" placeholder="Describe your condition and need for help" required></textarea>
+
+            <label for="documents">Upload Documents:</label>
+            <input type="file" id="documents" name="documents" multiple required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="statusContainer" class="hidden">
+        <h2>Check Report Status</h2>
+        <form id="statusForm">
+            <label for="submissionId">Submission ID:</label>
+            <input type="text" id="submissionId" name="submissionId" placeholder="Enter your submission ID" required>
+
+            <button type="submit">Check Status</button>
+        </form>
+        <div id="statusResult" class="hidden">
+            <p id="statusMessage">Status: Pending</p>
+        </div>
+    </div>
+
+    <div id="submissionHistory" class="hidden">
+        <h2>Submission History</h2>
+        <ul id="historyList"></ul>
+    </div>
+</div>

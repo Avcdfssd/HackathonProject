@@ -1,0 +1,22 @@
+<div class="content">
+    <h2>Researcher's Panel - View Reports</h2>
+
+    <!-- Filter buttons -->
+    <button onclick="filterReports('all')">All Reports</button>
+    <button onclick="filterReports('viewed')">Viewed Reports</button>
+    <button onclick="filterReports('notViewed')">Not Viewed Reports</button>
+
+    <!-- Recent Reports List -->
+    <div id="recentReportsList">
+        <!-- Reports will be dynamically inserted here -->
+    </div>
+
+    <!-- Report Details Modal -->
+    <div id="reportDetails">
+        <h3 id="reportTitle">Report Details</h3>
+        <p id="reportDescription"></p>
+        <p><strong>Files:</strong> <span id="reportFiles"></span></p>
+        <button id="viewedBtn">Mark as Viewed</button>
+        <button id="closeReportBtn">Close Report</button>
+    </div>
+</div>

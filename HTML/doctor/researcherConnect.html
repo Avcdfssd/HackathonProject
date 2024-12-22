@@ -1,0 +1,27 @@
+<div class="content">
+    <!-- Report New Disease Section -->
+    <div id="reportForm">
+        <h2>Report New Disease</h2>
+        <form id="diseaseReportForm">
+            <label for="diseaseName">Disease Name:</label>
+            <input type="text" id="diseaseName" name="diseaseName" placeholder="Enter disease name" required>
+
+            <label for="diseaseDescription">Description:</label>
+            <textarea id="diseaseDescription" name="diseaseDescription" placeholder="Describe the disease" required></textarea>
+
+            <label for="reportFiles">Upload Files:</label>
+            <input type="file" id="reportFiles" name="reportFiles" multiple required>
+
+            <button type="submit">Submit Report</button>
+        </form>
+    </div>
+
+    <!-- Upload History Section -->
+    <div id="uploadHistory" class="hidden">
+        <h2>Upload History</h2>
+        <ul id="historyList">
+            <!-- Dynamic List of Reports -->
+        </ul>
+        <button class="uploadHistoryBtn" onclick="toggleReportForm()">Add New Report</button>
+    </div>
+</div>

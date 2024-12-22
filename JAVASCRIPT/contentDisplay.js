@@ -305,6 +305,10 @@ function displayContents(val){
        }
     
        }
+
+       if(userType == "ngo") {
+
+       }
     }
 }  
 });
@@ -364,7 +368,9 @@ function checkUserLogin() {
         userLogin.style.display = 'none';
         usernameDisplay.style.display = 'inline';
         profileImage.style.display = 'inline';
-        usernameDisplay.innerText = sessionStorage.getItem('username');
+        
+            usernameDisplay.innerText = sessionStorage.getItem('username');
+        
 
         
 

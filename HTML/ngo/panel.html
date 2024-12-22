@@ -1,0 +1,23 @@
+<div class="content">
+    <div id="filterButtons">
+        <button onclick="filterReports('Pending')">Pending</button>
+        <button onclick="filterReports('Approved')">Approved</button>
+        <button onclick="filterReports('Denied')">Denied</button>
+    </div>
+
+    <div id="submissionHistory">
+        <h2>Submitted Reports</h2>
+        <ul id="historyList">
+            <!-- Dynamically generated list of submissions -->
+        </ul>
+    </div>
+
+    <!-- File Modal -->
+    <div id="fileModal">
+        <div id="fileContent">
+            <h3>File Preview</h3>
+            <div id="fileDisplay"></div>
+            <button onclick="closeFileModal()">Close</button>
+        </div>
+    </div>
+</div>

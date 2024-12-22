@@ -1,0 +1,73 @@
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#reportDetails {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.status {
+    font-weight: bold;
+}
+
+.viewed {
+    color: green;
+}
+
+.notViewed {
+    color: red;
+}
+
+.recentReportItem {
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.viewReportBtn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.viewReportBtn:hover {
+    background-color: #45a049;
+}
+
+#recentReportsList {
+    margin-top: 20px;
+}
+
+#viewedBtn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#viewedBtn:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+#closeReportBtn {
+    background-color: #DC3545;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#closeReportBtn:hover {
+    background-color: #C82333;
+}

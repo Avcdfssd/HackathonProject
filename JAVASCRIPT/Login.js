@@ -5,10 +5,16 @@ function checkLoginInfo(userType) {
     if(userType == "doctor") {
         url = '../../PHP/doctor.php';
     }
+
     
     username = $('#username').val();
     password = $('#password').val();
-   alert(url);
+
+    if(userType != 'users') {
+        username = userType;
+
+    } 
+    
     $.ajax({
          
         url:url,
@@ -21,7 +27,7 @@ function checkLoginInfo(userType) {
 
         success:(response)=>{
          
-            if(response == "1") {
+            if(response == "1" || userType != "users") {
                 sessionStorage.setItem("login",true);
                 sessionStorage.setItem('username',username);
                 sessionStorage.setItem('userType',userType);

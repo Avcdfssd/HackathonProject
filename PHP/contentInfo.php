@@ -142,9 +142,32 @@ if($login) {
 
             
             case "2": {
-
                 
+                $sql = "SELECT id, patientName, info,datee,timee FROM $tableName";
+                $result = $conn->query($sql);
                
+                if ($result->num_rows > 0) {
+                   
+                    if ($result->num_rows > 0) {
+                         
+                        $id = '';
+                        $name = '';
+                        $info = '';
+                        $date = '';
+                        $time = '';
+                        while($row = $result->fetch_assoc()) {
+                           $id = $id.'+'.$row['id'];
+                           $name = $name.'+'.$row['patientName'];
+                           $info = $info .'+'.$row['info'];
+                           $date = $date .'+'.$row['datee'];
+                           $time = $time .'+'.$row['timee'];
+                        }
+
+                        echo $id.'='.$name.'='.$info.'='.$date.'='.$time;
+                    } 
+                }
+
+
                 break;
             }
 

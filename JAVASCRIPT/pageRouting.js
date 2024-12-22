@@ -24,11 +24,26 @@ function loginDisplay(){
     if(count == 0 && sessionStorage.getItem('login')) {
 
         loadExternalHTML("leftContainer","./HTML/"+sessionStorage.getItem('userType')+"/sideBar.html");
+        
+        if(sessionStorage.getItem('userType') == 'ngo') {
+            loadExternalHTML("contentWindow","./HTML/"+sessionStorage.getItem('userType')+"/help.html")
+        }
 
+        
+        if(sessionStorage.getItem('userType') == 'admin') {
+            loadExternalHTML("contentWindow","./HTML/"+sessionStorage.getItem('userType')+"/panel.html")
+        }
+        
+        if(sessionStorage.getItem('userType') == 'researcher') {
+            loadExternalHTML("contentWindow","./HTML/"+sessionStorage.getItem('userType')+"/panel.html")
+        }
+        
 
       
         count++;
     }
+
+
 
 }
   

@@ -1,0 +1,117 @@
+<div class="content">
+    <h2>Admin Panel Dashboard</h2>
+
+    <!-- Notice Section -->
+    <div id="noticeSection" class="form-container">
+        <h3>Upload Notice</h3>
+        <form id="uploadNoticeForm">
+            <label for="noticeImage">Upload Notice Image:</label>
+            <input type="file" id="noticeImage" name="noticeImage" accept="image/*">
+            
+            <label for="noticeText">Notice Text:</label>
+            <textarea id="noticeText" name="noticeText" placeholder="Enter notice text here" required></textarea>
+
+            <button type="submit">Upload Notice</button>
+        </form>
+
+        <div id="noticePreview" class="notice-container hidden">
+            <h3>Preview Notice</h3>
+            <img id="previewImage" src="" alt="Notice Image">
+            <p id="previewText"></p>
+        </div>
+    </div>
+
+    <!-- User Management Section -->
+    <div id="userManagementSection" class="form-container hidden">
+        <h3>User Management</h3>
+        <div class="user-management-container">
+            <button onclick="showAddUserForm()">Add User</button>
+            <button onclick="showModifyUserForm()">Modify User</button>
+            <button onclick="showDeleteUserForm()">Delete User</button>
+        </div>
+
+        <!-- Add User Form -->
+        <div id="addUserForm" class="hidden">
+            <h4>Add User</h4>
+            <form id="addUserFormSubmit">
+                <label for="userName">User Name:</label>
+                <input type="text" id="userName" name="userName" required>
+
+                <label for="userRole">Role:</label>
+                <select id="userRole" name="userRole">
+                    <option value="user">User</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="researcher">Researcher</option>
+                    <option value="ngo">NGO</option>
+                </select>
+
+                <button type="submit">Add User</button>
+            </form>
+        </div>
+
+        <!-- Modify User Form -->
+        <div id="modifyUserForm" class="hidden">
+            <h4>Modify User</h4>
+            <form id="modifyUserFormSubmit">
+                <label for="modifyUserName">User Name:</label>
+                <input type="text" id="modifyUserName" name="modifyUserName" required>
+
+                <label for="modifyUserRole">New Role:</label>
+                <select id="modifyUserRole" name="modifyUserRole">
+                    <option value="user">User</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="researcher">Researcher</option>
+                    <option value="ngo">NGO</option>
+                </select>
+
+                <button type="submit">Modify User</button>
+            </form>
+        </div>
+
+        <!-- Delete User Form -->
+        <div id="deleteUserForm" class="hidden">
+            <h4>Delete User</h4>
+            <form id="deleteUserFormSubmit">
+                <label for="deleteUserName">User Name:</label>
+                <input type="text" id="deleteUserName" name="deleteUserName" required>
+
+                <button type="submit">Delete User</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- User List Section -->
+    <div class="form-container">
+        <h3>Existing Users</h3>
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>User Name</th>
+                    <th>Role                        <th>Role</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example user list rows, will be populated dynamically -->
+                <tr>
+                    <td>John Doe</td>
+                    <td>User</td>
+                    <td>
+                        <button onclick="modifyUser('John Doe')">Modify</button>
+                        <button onclick="deleteUser('John Doe')">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dr. Smith</td>
+                    <td>Doctor</td>
+                    <td>
+                        <button onclick="modifyUser('Dr. Smith')">Modify</button>
+                        <button onclick="deleteUser('Dr. Smith')">Delete</button>
+                    </td>
+                </tr>
+                <!-- Add more users as needed -->
+            </tbody>
+        </table>
+    </div>
+
+</div>
